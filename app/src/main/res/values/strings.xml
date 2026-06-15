@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">手势控制器</string>
+    <string name="accessibility_description">手势控制器无障碍服务，用于将识别到的手势转化为系统操作，如滑动、点击、返回等。</string>
+    <string name="camera_permission_required">需要摄像头权限才能进行手势识别</string>
+    <string name="overlay_permission_required">需要悬浮窗权限才能显示手势状态</string>
+    <string name="accessibility_service_required">需要开启无障碍服务才能执行手势操作</string>
+    <string name="grant_permission">授予权限</string>
+    <string name="start_detection">开始识别</string>
+    <string name="stop_detection">停止识别</string>
+    <string name="open_accessibility">开启无障碍服务</string>
+    <string name="open_overlay">开启悬浮窗</string>
+    <string name="status_idle">等待开始</string>
+    <string name="status_no_hand">未检测到手部</string>
+    <string name="status_detecting">识别中...</string>
+    <string name="status_confirmed">手势确认</string>
+    <string name="status_loading">模型加载中...</string>
+    <string name="gesture_swipe_up">食指向上指 - 屏幕下滑（向下滚动）</string>
+    <string name="gesture_swipe_down">食指向下指 - 屏幕上滑（向上滚动）</string>
+    <string name="gesture_swipe_left">食指向左指 - 返回</string>
+    <string name="gesture_swipe_right">食指向右指 - 最近任务</string>
+    <string name="gesture_tap">握拳 - 点击</string>
+</resources>
