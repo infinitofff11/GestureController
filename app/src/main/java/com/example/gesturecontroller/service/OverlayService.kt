@@ -13,6 +13,7 @@ import android.os.Handler
 import android.os.HandlerThread
 import android.os.IBinder
 import android.os.Looper
+import android.os.SystemClock
 import android.util.DisplayMetrics
 import android.view.Gravity
 import android.view.LayoutInflater
@@ -62,6 +63,10 @@ class OverlayService : Service(), LifecycleOwner {
 
     // Activity 提供的预览 SurfaceProvider，用于同时显示摄像头画面
     private var previewSurfaceProvider: Preview.SurfaceProvider? = null
+    // 已绑定的 Preview 实例引用，SurfaceProvider 变化时直接更新，避免 unbindAll 重建会话
+    private var boundPreview: Preview? = null
+    // 标记相机是否已绑定，防止重复绑定导致会话重建
+    private var isCameraBound = false
 
     companion object {
         var instance: OverlayService? = null
@@ -101,15 +106,13 @@ class OverlayService : Service(), LifecycleOwner {
     }
 
     /**
-     * Activity 调用此方法注册 PreviewView 的 SurfaceProvider
-     * 这样 Service 可以同时绑定 Preview + ImageAnalysis，Activity 也能看到摄像头画面
+     * Activity 调用此方法注册/更新 PreviewView 的 SurfaceProvider
+     * 直接更新已绑定的 Preview，不触发 unbindAll，避免相机会话重建导致 MediaPipe 中断
      */
     fun setPreviewSurfaceProvider(provider: Preview.SurfaceProvider?) {
         previewSurfaceProvider = provider
-        // 如果摄像头已经在运行，重新绑定以加入/移除 Preview
-        if (cameraProvider != null) {
-            bindCameraUseCases()
-        }
+        // 直接更新 Preview 的 SurfaceProvider，不重建会话
+        boundPreview?.setSurfaceProvider(provider)
     }
 
     private fun initLandmarker() {
@@ -142,9 +145,12 @@ class OverlayService : Service(), LifecycleOwner {
     }
 
     /**
-     * 绑定摄像头用例：始终绑定 ImageAnalysis，如果 Activity 提供了 SurfaceProvider 则同时绑定 Preview
+     * 绑定摄像头用例：只绑定一次，同时绑定 Preview + ImageAnalysis
+     * SurfaceProvider 变化时通过 setPreviewSurfaceProvider 直接更新，不重建会话
      */
     private fun bindCameraUseCases() {
+        // 防止重复绑定，避免会话重建导致 MediaPipe 中断
+        if (isCameraBound) return
         val provider = cameraProvider ?: return
 
         val imageAnalyzer = ImageAnalysis.Builder()
@@ -163,21 +169,17 @@ class OverlayService : Service(), LifecycleOwner {
                 }
             }
 
+        // 始终创建 Preview 并保留引用，SurfaceProvider 可为 null（后台时无预览）
+        val preview = Preview.Builder().build()
+        preview.setSurfaceProvider(previewSurfaceProvider)
+        boundPreview = preview
+
         val cameraSelector = CameraSelector.DEFAULT_FRONT_CAMERA
 
         try {
             provider.unbindAll()
-
-            val surfaceProvider = previewSurfaceProvider
-            if (surfaceProvider != null) {
-                // 同时绑定 Preview + ImageAnalysis
-                val preview = Preview.Builder().build()
-                preview.setSurfaceProvider(surfaceProvider)
-                provider.bindToLifecycle(this, cameraSelector, preview, imageAnalyzer)
-            } else {
-                // 仅绑定 ImageAnalysis（后台运行时）
-                provider.bindToLifecycle(this, cameraSelector, imageAnalyzer)
-            }
+            provider.bindToLifecycle(this, cameraSelector, preview, imageAnalyzer)
+            isCameraBound = true
         } catch (e: Exception) {
             android.util.Log.e("OverlayService", "Camera binding failed", e)
         }
@@ -188,7 +190,7 @@ class OverlayService : Service(), LifecycleOwner {
         if (landmarks.isNullOrEmpty()) return
 
         val handLandmarks = landmarks[0]
-        val gesture = gestureHelper.detectGesture(handLandmarks)
+        val gesture = gestureHelper.detectGesture(handLandmarks, SystemClock.uptimeMillis())
 
         if (gesture != GestureType.NONE) {
             executeGesture(gesture)
@@ -204,10 +206,10 @@ class OverlayService : Service(), LifecycleOwner {
     }
 
     private fun getGestureDisplayName(gesture: GestureType): String = when (gesture) {
-        GestureType.SWIPE_UP -> "向上指-下滑"
-        GestureType.SWIPE_DOWN -> "向下指-上滑"
-        GestureType.SWIPE_LEFT -> "向左指-返回"
-        GestureType.SWIPE_RIGHT -> "向右指-最近任务"
+        GestureType.SWIPE_UP -> "上滑-屏幕上滑"
+        GestureType.SWIPE_DOWN -> "下滑-屏幕下滑"
+        GestureType.SWIPE_LEFT -> "左滑-返回"
+        GestureType.SWIPE_RIGHT -> "右滑-主屏"
         GestureType.TAP -> "握拳-点击"
         GestureType.NONE -> ""
     }
@@ -316,6 +318,8 @@ class OverlayService : Service(), LifecycleOwner {
     override fun onDestroy() {
         lifecycleRegistry.currentState = Lifecycle.State.DESTROYED
         cameraProvider?.unbindAll()
+        isCameraBound = false
+        boundPreview = null
         landmarkerHelper?.close()
         overlayView?.let { windowManager.removeView(it) }
         previewSurfaceProvider = null

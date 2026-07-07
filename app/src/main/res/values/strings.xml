@@ -14,9 +14,9 @@
     <string name="status_detecting">识别中...</string>
     <string name="status_confirmed">手势确认</string>
     <string name="status_loading">模型加载中...</string>
-    <string name="gesture_swipe_up">食指向上指 - 屏幕下滑（向下滚动）</string>
-    <string name="gesture_swipe_down">食指向下指 - 屏幕上滑（向上滚动）</string>
-    <string name="gesture_swipe_left">食指向左指 - 返回</string>
-    <string name="gesture_swipe_right">食指向右指 - 最近任务</string>
+    <string name="gesture_swipe_up">食指向上滑动 - 屏幕下滑（向下滚动）</string>
+    <string name="gesture_swipe_down">食指向下滑动 - 屏幕上滑（向上滚动）</string>
+    <string name="gesture_swipe_left">食指向左滑动 - 返回</string>
+    <string name="gesture_swipe_right">食指向右滑动 - 回到主屏</string>
     <string name="gesture_tap">握拳 - 点击</string>
 </resources>

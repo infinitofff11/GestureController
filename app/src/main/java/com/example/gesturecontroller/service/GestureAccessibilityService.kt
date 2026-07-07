@@ -87,4 +87,12 @@ class GestureAccessibilityService : AccessibilityService() {
         performGlobalAction(GLOBAL_ACTION_RECENTS)
         Log.d(TAG, "Recent apps performed")
     }
+
+    /**
+     * 回到主屏（Home键）
+     */
+    fun performHome() {
+        performGlobalAction(GLOBAL_ACTION_HOME)
+        Log.d(TAG, "Home performed")
+    }
 }

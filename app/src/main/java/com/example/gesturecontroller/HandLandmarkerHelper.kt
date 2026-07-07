@@ -12,6 +12,7 @@ import com.google.mediapipe.tasks.core.BaseOptions
 import com.google.mediapipe.tasks.vision.core.RunningMode
 import com.google.mediapipe.tasks.vision.handlandmarker.HandLandmarker
 import com.google.mediapipe.tasks.vision.handlandmarker.HandLandmarkerResult
+import java.util.concurrent.ConcurrentLinkedQueue
 
 class HandLandmarkerHelper(
     private val context: Context,
@@ -19,6 +20,22 @@ class HandLandmarkerHelper(
 ) {
     private var handLandmarker: HandLandmarker? = null
     private var lastTimestamp = 0L
+
+    // 复用 bitmapBuffer，避免每帧分配
+    private var bitmapBuffer: Bitmap? = null
+    private var bufferWidth = 0
+    private var bufferHeight = 0
+
+    // 待回收的 Bitmap 队列：MediaPipe 按序处理，回调也按序触发
+    // 每个条目记录入队时间戳，超时未回调的自动清理，防止会话重建时丢帧导致队列永久堵塞
+    private data class PendingBitmap(val bitmap: Bitmap, val timestamp: Long)
+    private val pendingBitmaps = ConcurrentLinkedQueue<PendingBitmap>()
+
+    // 最大待处理帧数，超过则丢弃新帧，防止队列无界增长导致内存泄漏
+    private val MAX_PENDING = 3
+
+    // Bitmap 超时时间（毫秒），超过此时间仍未被回调回收则视为 MediaPipe 丢帧，手动清理
+    private val BITMAP_TIMEOUT_MS = 1000L
 
     init {
         setupHandLandmarker()
@@ -38,9 +55,12 @@ class HandLandmarkerHelper(
                 .setNumHands(1)
                 .setRunningMode(RunningMode.LIVE_STREAM)
                 .setResultListener { result: HandLandmarkerResult, _: MPImage ->
+                    // 按序回收最早入队的 Bitmap
+                    pendingBitmaps.poll()?.bitmap?.recycle()
                     listener.onResults(result)
                 }
                 .setErrorListener { e: RuntimeException ->
+                    pendingBitmaps.poll()?.bitmap?.recycle()
                     Log.e(TAG, "MediaPipe error: ${e.message}")
                     listener.onError(e.message ?: "Unknown error")
                 }
@@ -66,6 +86,24 @@ class HandLandmarkerHelper(
             return
         }
 
+        // 超时清理：扫描队首，回收超过 BITMAP_TIMEOUT_MS 仍未被回调的 Bitmap
+        // 这能防止 MediaPipe 会话重建时静默丢帧导致队列永久堵塞
+        val now = SystemClock.uptimeMillis()
+        while (true) {
+            val head = pendingBitmaps.peek() ?: break
+            if (now - head.timestamp > BITMAP_TIMEOUT_MS) {
+                pendingBitmaps.poll()?.bitmap?.recycle()
+            } else {
+                break
+            }
+        }
+
+        // 限制待处理帧数，防止队列无界增长导致内存泄漏
+        if (pendingBitmaps.size >= MAX_PENDING) {
+            imageProxy.close()
+            return
+        }
+
         try {
             // 确保时间戳严格递增（MediaPipe 要求）
             var frameTime = SystemClock.uptimeMillis()
@@ -74,14 +112,16 @@ class HandLandmarkerHelper(
             }
             lastTimestamp = frameTime
 
-            // 从 ImageProxy 复制像素到 Bitmap
-            val bitmapBuffer = Bitmap.createBitmap(
-                imageProxy.width,
-                imageProxy.height,
-                Bitmap.Config.ARGB_8888
-            )
-            bitmapBuffer.copyPixelsFromBuffer(imageProxy.planes[0].buffer)
-            // 关闭 ImageProxy（只关闭一次）
+            // 复用 bitmapBuffer，仅在尺寸变化时重建
+            if (bitmapBuffer == null || bufferWidth != imageProxy.width || bufferHeight != imageProxy.height) {
+                bitmapBuffer?.recycle()
+                bitmapBuffer = Bitmap.createBitmap(
+                    imageProxy.width, imageProxy.height, Bitmap.Config.ARGB_8888
+                )
+                bufferWidth = imageProxy.width
+                bufferHeight = imageProxy.height
+            }
+            bitmapBuffer!!.copyPixelsFromBuffer(imageProxy.planes[0].buffer)
             imageProxy.close()
 
             // 旋转和翻转图像（前置摄像头需要镜像）
@@ -90,13 +130,12 @@ class HandLandmarkerHelper(
                 postScale(-1f, 1f, imageProxy.width.toFloat(), imageProxy.height.toFloat())
             }
             val rotatedBitmap = Bitmap.createBitmap(
-                bitmapBuffer, 0, 0, bitmapBuffer.width, bitmapBuffer.height,
+                bitmapBuffer!!, 0, 0, bitmapBuffer!!.width, bitmapBuffer!!.height,
                 matrix, true
             )
-            // 回收中间 Bitmap
-            if (rotatedBitmap !== bitmapBuffer) {
-                bitmapBuffer.recycle()
-            }
+
+            // 入队等待回调回收，记录当前时间戳用于超时清理
+            pendingBitmaps.add(PendingBitmap(rotatedBitmap, SystemClock.uptimeMillis()))
 
             // 转换为 MPImage 并执行异步检测
             val mpImage = BitmapImageBuilder(rotatedBitmap).build()
@@ -113,6 +152,11 @@ class HandLandmarkerHelper(
     fun close() {
         handLandmarker?.close()
         handLandmarker = null
+        // 回收队列中所有待处理 Bitmap
+        pendingBitmaps.forEach { it.bitmap.recycle() }
+        pendingBitmaps.clear()
+        bitmapBuffer?.recycle()
+        bitmapBuffer = null
     }
 
     interface LandmarkerListener {

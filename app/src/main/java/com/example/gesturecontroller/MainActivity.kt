@@ -217,10 +217,10 @@ fun MainScreen() {
                         fontWeight = FontWeight.Bold
                     )
                     Spacer(modifier = Modifier.height(4.dp))
-                    GestureInfoRow("食指向上指", "下滑（滚动向下）")
-                    GestureInfoRow("食指向下指", "上滑（滚动向上）")
-                    GestureInfoRow("食指向左指", "返回")
-                    GestureInfoRow("食指向右指", "最近任务")
+                    GestureInfoRow("食指向上滑动", "屏幕下滑（滚动向下）")
+                    GestureInfoRow("食指向下滑动", "屏幕上滑（滚动向上）")
+                    GestureInfoRow("食指向左滑动", "返回")
+                    GestureInfoRow("食指向右滑动", "回到主屏")
                     GestureInfoRow("握拳", "点击")
                 }
             }
@@ -238,6 +238,8 @@ fun MainScreen() {
                         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
                             context.startForegroundService(intent)
                         }
+                        // 启动服务后立即退到后台，避免手势触发时 BACK 杀死自己的 Activity
+                        (context as? android.app.Activity)?.moveTaskToBack(true)
                     },
                     enabled = !isServiceRunning && hasCameraPermission && hasOverlayPermission && isAccessibilityEnabled,
                     modifier = Modifier.weight(1f),
@@ -343,11 +345,14 @@ fun PermissionRow(label: String, granted: Boolean, onRequest: () -> Unit) {
 }
 
 private fun checkAccessibilityEnabled(context: Context): Boolean {
+    // 优先用静态 instance 判断，最可靠
+    if (com.example.gesturecontroller.service.GestureAccessibilityService.isRunning()) return true
+    // fallback：系统 API 检测
     val am = context.getSystemService(Context.ACCESSIBILITY_SERVICE) as AccessibilityManager
     val enabledServices = am.getEnabledAccessibilityServiceList(
         AccessibilityServiceInfo.FEEDBACK_ALL_MASK
     )
     return enabledServices.any {
-        it.resolveInfo.serviceInfo.packageName == context.packageName
+        it.resolveInfo?.serviceInfo?.packageName == context.packageName
     }
 }

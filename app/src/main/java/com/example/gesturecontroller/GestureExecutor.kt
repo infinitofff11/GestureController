@@ -22,7 +22,7 @@ class GestureExecutor {
                 service.performGlobalBack()
             }
             GestureType.SWIPE_RIGHT -> {
-                service.performRecentApps()
+                service.performHome()
             }
             GestureType.TAP -> {
                 service.performClick(centerX, centerY)
