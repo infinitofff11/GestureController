@@ -1,0 +1,600 @@
+2026-07-03 03:13:28.645  2012-2048  QosSceneRe...tartScene] system_server                        E  notifyActivityStart get launchedFromUid failed through AppManager! launchedFromPackage: com.android.shell, pkg: com.example.gesturecontroller
+---------------------------- PROCESS STARTED (27546) for package com.example.gesturecontroller ----------------------------
+2026-07-03 03:13:28.735 27546-27546 nativeloader            com.example.gesturecontroller        D  Load libframework-connectivity-tiramisu-jni.so using APEX ns com_android_tethering for caller /apex/com.android.tethering/javalib/framework-connectivity-t.jar: ok
+2026-07-03 03:13:28.739 27546-27546 OneTrace                com.example.gesturecontroller        I  Mark active for pid=27546? true
+2026-07-03 03:13:28.739 27546-27546 cutils-dev              com.example.gesturecontroller        D  otrace_set_tracing_enabled? true tag:0
+2026-07-03 03:13:28.740 27546-27562 cutils-dev              com.example.gesturecontroller        D  properties changed in otrace_seq_number_changed!
+2026-07-03 03:13:28.760 27546-27565 OplusActivityManager    com.example.gesturecontroller        D  get AMS extension: android.os.BinderProxy@be5ddd4
+2026-07-03 03:13:28.762 27546-27565 SurfaceSyncGroup        com.example.gesturecontroller        D  preCreateSurfaceSyncGroupTimerThread
+2026-07-03 03:13:28.766  2012-2065  OplusThermalStats       system_server                        E  Error getting package info: com.example.gesturecontroller
+2026-07-03 03:13:28.767 27546-27546 nativeloader            com.example.gesturecontroller        D  Load /data/user/0/com.example.gesturecontroller/code_cache/startup_agents/65318d08-agent.so using system ns (caller=<unknown>): ok
+2026-07-03 03:13:28.772 27546-27546 sturecontroller         com.example.gesturecontroller        W  hiddenapi: DexFile /data/data/com.example.gesturecontroller/code_cache/.studio/instruments-873176f2.jar is in boot class path but is not in a known location
+2026-07-03 03:13:29.009 27546-27546 sturecontroller         com.example.gesturecontroller        W  Redefining intrinsic method java.lang.Thread java.lang.Thread.currentThread(). This may cause the unexpected use of the original definition of java.lang.Thread java.lang.Thread.currentThread()in methods that have already been compiled.
+2026-07-03 03:13:29.009 27546-27546 sturecontroller         com.example.gesturecontroller        W  Redefining intrinsic method boolean java.lang.Thread.interrupted(). This may cause the unexpected use of the original definition of boolean java.lang.Thread.interrupted()in methods that have already been compiled.
+2026-07-03 03:13:29.015 27546-27546 CompactWindowAppManager com.example.gesturecontroller        D  initCompactApplicationInfo CompactMode: , NormalMode: 
+2026-07-03 03:13:29.019 27546-27546 Configuration           com.example.gesturecontroller        V  Updating configuration, locales updated from [] to [zh_CN_#Hans]
+2026-07-03 03:13:29.020 27546-27546 OplusScrollToTopManager com.example.gesturecontroller        D  setIsInWhiteList false
+2026-07-03 03:13:29.021 27546-27546 OplusViewDebugManager   com.example.gesturecontroller        D  OplusViewDebugManager Constructor android.view.debug.OplusViewDebugManager@ff5aec3 [mHasViewDebugProperty true] [mHasMsgDebugProperty false] [DEBUG false] [EXTRAINFOENABLE false] [LIGHT_OS false]
+2026-07-03 03:13:29.029 27546-27546 libc                    com.example.gesturecontroller        W  Access denied finding property "ro.odm.prev.product.name"
+2026-07-03 03:13:29.243 27546-27546 Quality                 com.example.gesturecontroller        I  Odex status:io-error-no-oat filter:run-from-apk reason:unknown location:/data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk cost:207
+2026-07-03 03:13:29.244 27546-27546 nativeloader            com.example.gesturecontroller        D  Configuring clns-9 for other apk /data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk. target_sdk_version=36, uses_libraries=, library_path=/data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/lib/arm64:/data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk!/lib/arm64-v8a, permitted_path=/data:/mnt/expand:/data/user/0/com.example.gesturecontroller
+2026-07-03 03:13:29.248 27546-27546 sturecontroller         com.example.gesturecontroller        I  AssetManager2(0xb40000796c8a0728) locale list changing from [] to [zh-Hans-CN]
+2026-07-03 03:13:29.250 27546-27546 sturecontroller         com.example.gesturecontroller        I  AssetManager2(0xb40000796c8a0d28) locale list changing from [] to [zh-Hans-CN]
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V  Currently set values for:
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V    angle_gl_driver_selection_pkgs=[]
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V    angle_gl_driver_selection_values=[]
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V  com.example.gesturecontroller is not listed in per-application setting
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V  ANGLE allowlist from config: 
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V  com.example.gesturecontroller is not listed in ANGLE allowlist or settings, returning default
+2026-07-03 03:13:29.252 27546-27546 GraphicsEnvironment     com.example.gesturecontroller        V  Neither updatable production driver nor prerelease driver is supported.
+2026-07-03 03:13:29.254 27546-27546 ResourcesManagerExtImpl com.example.gesturecontroller        D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:-1
+2026-07-03 03:13:29.265 27546-27546 OplusGraphicsEvent      com.example.gesturecontroller        D  OplusGraphicsEventListener create now!
+2026-07-03 03:13:29.266 27546-27546 OplusGraphicsEvent      com.example.gesturecontroller        D  addEventListener success!
+2026-07-03 03:13:29.266 27546-27546 [UAH_CLIENT]            com.example.gesturecontroller        E  uahInit enter
+2026-07-03 03:13:29.267 27546-27546 sturecontroller         com.example.gesturecontroller        W  AIBinder_linkToDeath is being called with a non-null cookie and no onUnlink callback set. This might not be intended. AIBinder_DeathRecipient_setOnUnlinked should be called first.
+2026-07-03 03:13:29.268 27546-27546 [UAH_CLIENT]            com.example.gesturecontroller        I  UahGetFeatureStatus enter
+2026-07-03 03:13:29.270 27546-27546 nativeloader            com.example.gesturecontroller        D  Load libpowerhalwrap_jni.so using system ns (caller=/system_ext/framework/mediatek-framework.jar): ok
+2026-07-03 03:13:29.270 27546-27546 PowerHalWrapper         com.example.gesturecontroller        I  PowerHalWrapper.getInstance 
+2026-07-03 03:13:29.270 27546-27546 PowerHalWrapper         com.example.gesturecontroller        I  PowerHalWrapper.getInstance 
+2026-07-03 03:13:29.270 27546-27546 M-ProMotion             com.example.gesturecontroller        I  M-ProMotion is disabled
+2026-07-03 03:13:29.271 27546-27546 PowerHalWrapper         com.example.gesturecontroller        I  PowerHalWrapper.getInstance 
+2026-07-03 03:13:29.276 27546-27546 HWUI                    com.example.gesturecontroller        I  SupportApps size 0
+2026-07-03 03:13:29.277 27546-27546 ExtensionsLoader        com.example.gesturecontroller        D  createInstance(64bit) : createExtendedFactory
+2026-07-03 03:13:29.277 27546-27546 ExtensionsLoader        com.example.gesturecontroller        D  Opened libSchedAssistExtImpl.so
+2026-07-03 03:13:29.277 27546-27546 SchedAssist             com.example.gesturecontroller        E  open sharedFd failed with error=No such file or directory
+2026-07-03 03:13:29.277 27546-27546 SchedAssist             com.example.gesturecontroller        E  open sharedFd failed with error=No such file or directory
+2026-07-03 03:13:29.277 27546-27546 SchedAssist             com.example.gesturecontroller        E  open sharedFd failed with error=Permission denied
+2026-07-03 03:13:29.277 27546-27546 SchedAssist             com.example.gesturecontroller        E  open sharedFd failed with error=Permission denied
+2026-07-03 03:13:29.277 27546-27546 SchedAssist             com.example.gesturecontroller        E  open sharedFd failed with error=Permission denied
+2026-07-03 03:13:29.277 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  createInstance(64bit) : createExtendedFactory
+2026-07-03 03:13:29.278 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  Opened libSchedAssistExtImpl.so
+2026-07-03 03:13:29.278 27546-27590 DisplayManager          com.example.gesturecontroller        I  Choreographer implicitly registered for the refresh rate.
+2026-07-03 03:13:29.279 27546-27546 sturecontroller         com.example.gesturecontroller        I  AssetManager2(0xb40000796c8af728) locale list changing from [] to [zh-Hans-CN]
+2026-07-03 03:13:29.279 27546-27546 ResourcesManagerExtImpl com.example.gesturecontroller        D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2026-07-03 03:13:29.288 27546-27546 ashmem                  com.example.gesturecontroller        E  Pinning is deprecated since Android Q. Please use trim or other methods.
+2026-07-03 03:13:29.292 27546-27546 OplusPredi...Controller com.example.gesturecontroller        E   NoSuchMethodException 
+2026-07-03 03:13:29.292 27546-27546 OplusPredi...Controller com.example.gesturecontroller        D  should not HookOnBackInvokedCallbackEnabled for application com.example.gesturecontroller.MainActivity@43c612b sdk: 36
+2026-07-03 03:13:29.292 27546-27546 OplusPredi...Controller com.example.gesturecontroller        D  initPredictiveBackConfig for com.example.gesturecontroller.MainActivity@43c612b initPredictiveBackConfig mShouldInterceptKeyEvent false
+2026-07-03 03:13:29.292 27546-27546 WindowOnBackDispatcher  com.example.gesturecontroller        D   predictive settings is disabled for com.example.gesturecontroller
+2026-07-03 03:13:29.292 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  createInstance(64bit) : createExtendedFactory
+2026-07-03 03:13:29.292 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  Opened libeglextimpl.so
+2026-07-03 03:13:29.292 27546-27590 PreCache                com.example.gesturecontroller        D  [IPreCacheRus]loadRUSConfigs#102 failed to transact: -22 prc:com.example.gesturecontroller
+2026-07-03 03:13:29.293 27546-27546 oplus.andr...actoryImpl com.example.gesturecontroller        I  Unknow feature:IOplusTextViewRTLUtilForUG
+2026-07-03 03:13:29.297 27546-27546 CompatChangeReporter    com.example.gesturecontroller        D  Compat change id reported: 377864165; UID 10422; state: ENABLED
+2026-07-03 03:13:29.298 27546-27546 DesktopModeFlags        com.example.gesturecontroller        D  Toggle override initialized to: OVERRIDE_UNSET
+2026-07-03 03:13:29.318 27546-27546 ActivityThread          com.example.gesturecontroller        D  ComponentInfo{com.example.gesturecontroller/com.example.gesturecontroller.MainActivity} checkFinished=false 2
+2026-07-03 03:13:29.318 27546-27546 ResourcesManagerExtImpl com.example.gesturecontroller        D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2026-07-03 03:13:29.321 27546-27586 PowerHalWrapper         com.example.gesturecontroller        I  PowerHalWrapper.getInstance 
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  init sDebug to false, init sDebugIme to false, init sAlwaysOn to false
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  updateDebugToClass InputMethodManager.DEBUG = false
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  updateDebugToClass ImeFocusController.DEBUG = false
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  updateDebugToClass OnBackInvokedDispatcher.DEBUG = false
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  updateDebugToClass InsetsController.DEBUG = false
+2026-07-03 03:13:29.322 27546-27546 OplusInputMethodUtil    com.example.gesturecontroller        D  updateDebugToClass BaseInputConnection.DEBUG = false
+2026-07-03 03:13:29.324 27546-27546 SurfaceFactory          com.example.gesturecontroller        I  [static] sSurfaceFactory = com.mediatek.view.impl.SurfaceFactoryImpl@6d0d7df
+2026-07-03 03:13:29.329 27546-27546 WindowManager           com.example.gesturecontroller        D  Add to mViews: com.android.internal.policy.DecorView{d41dd71 I.E...... R.....ID 0,0-0,0 alpha=1.0 viewInfo = }[MainActivity],pkg= com.example.gesturecontroller
+2026-07-03 03:13:29.330 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  createInstance(64bit) : createExtendedFactory
+2026-07-03 03:13:29.331 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  Opened libhwuiextimpl.so
+2026-07-03 03:13:29.331 27546-27590 skia                    com.example.gesturecontroller        D  setRusSupported enable 0
+2026-07-03 03:13:29.339 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  onDisplayChanged -1 for VRI android.view.ViewRootImpl@345dfad
+2026-07-03 03:13:29.341 27546-27546 ResourcesManagerExtImpl com.example.gesturecontroller        D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2026-07-03 03:13:29.343 27546-27546 OplusBracketLog         com.example.gesturecontroller        E  [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@345dfad
+2026-07-03 03:13:29.424 27546-27546 sturecontroller         com.example.gesturecontroller        I  hiddenapi: Accessing hidden method Landroid/os/SystemProperties;->addChangeCallback(Ljava/lang/Runnable;)V (runtime_flags=0, domain=platform, api=unsupported) from Landroidx/compose/ui/platform/AndroidComposeView$Companion; (domain=app) using reflection: allowed
+2026-07-03 03:13:29.429 27546-27546 Vibrator                com.example.gesturecontroller        D  SystemVibrator Created
+2026-07-03 03:13:29.465 27546-27546 WindowOnBackDispatcher  com.example.gesturecontroller        D   predictive settings is disabled for com.example.gesturecontroller
+2026-07-03 03:13:29.465 27546-27546 WindowOnBackDispatcher  com.example.gesturecontroller        D   predictive settings is disabled for com.example.gesturecontroller
+2026-07-03 03:13:29.512 27546-27546 QuirkSettingsLoader     com.example.gesturecontroller        D  QuirkSettings$MetadataHolderService is not found.
+2026-07-03 03:13:29.512 27546-27546 CameraX                 com.example.gesturecontroller        D  QuirkSettings from app metadata: null
+2026-07-03 03:13:29.512 27546-27546 CameraX                 com.example.gesturecontroller        D  QuirkSettings by default: QuirkSettings{enabledWhenDeviceHasQuirk=true, forceEnabledQuirks=[], forceDisabledQuirks=[]}
+2026-07-03 03:13:29.516 27546-27603 CameraManagerExtImpl    com.example.gesturecontroller        I  packagename is com.example.gesturecontroller
+2026-07-03 03:13:29.516 27546-27603 OplusCameraManager      com.example.gesturecontroller        I  saveOpPackageName, mOpPackageName: com.example.gesturecontroller
+2026-07-03 03:13:29.519 27546-27603 DeviceQuirks            com.example.gesturecontroller        D  camera2 DeviceQuirks = 
+2026-07-03 03:13:29.520 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.520 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  Connecting to camera service
+2026-07-03 03:13:29.520 27546-27603 CameraManagerGlobal     com.example.gesturecontroller        I  Connecting to camera service
+2026-07-03 03:13:29.524 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.529 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.530 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.540 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.552 27546-27603 CameraRepository        com.example.gesturecontroller        D  Added camera: 0
+2026-07-03 03:13:29.556 27546-27603 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:29.563 27546-27603 Camera2CameraInfo       com.example.gesturecontroller        I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_FULL
+2026-07-03 03:13:29.564 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.570 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=0, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1240, 2772), relayoutAsync=false, flags=0, newFlags=1453326336, title=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.571 27546-27603 CameraRepository        com.example.gesturecontroller        D  Added camera: 1
+2026-07-03 03:13:29.571 27546-27603 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:29.572 27546-27603 Camera2CameraInfo       com.example.gesturecontroller        I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_FULL
+2026-07-03 03:13:29.572 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.573 27546-27603 CameraRepository        com.example.gesturecontroller        D  Added camera: 2
+2026-07-03 03:13:29.573 27546-27603 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:29.574 27546-27603 Camera2CameraInfo       com.example.gesturecontroller        I  Device Level: INFO_SUPPORTED_HARDWARE_LEVEL_FULL
+2026-07-03 03:13:29.574 27546-27603 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.575 27546-27603 CameraValidator         com.example.gesturecontroller        D  Verifying camera lens facing on OP5927, lensFacingInteger: null
+2026-07-03 03:13:29.579 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  relayoutWindow result, sizeChanged:true, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1240, 2772), mLastSurfaceSize:Point(0, 0), mWidth:-1, mHeight:-1, requestedWidth:1240, requestedHeight:2772, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1240,2772] display=[0,0][1240,2772] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2026-07-03 03:13:29.580 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        W  updateBlastSurfaceIfNeeded, surfaceSize:Point(1240, 2772), lastSurfaceSize:Point(0, 0), format:-1, blastBufferQueue:null
+2026-07-03 03:13:29.580 27546-27546 sturecontroller         com.example.gesturecontroller        E  [perfctl] 27546 27546 FPSGO ver:0
+2026-07-03 03:13:29.580 27546-27546 sturecontroller         com.example.gesturecontroller        E  [perfctl] 0 0 0 0
+2026-07-03 03:13:29.580 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000000,api:0,p:-1,c:27546) connect: controlledByApp=false
+2026-07-03 03:13:29.581 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [VRI[MainActivity]#0(BLAST Consumer)0](id:6b9a00000000,api:0,p:-1,c:27546) setMaxAcquiredBufferCount: 3
+2026-07-03 03:13:29.583 27546-27590 HWUI                    com.example.gesturecontroller        D  createSurface new attribs array
+2026-07-03 03:13:29.583 27546-27590 libEGL                  com.example.gesturecontroller        D  this is from skia gles
+2026-07-03 03:13:29.603 27546-27546 SurfaceControl          com.example.gesturecontroller        I   setExtendedRangeBrightness sc=Surface(name=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity)/@0x43daab8,currentBufferRatio=1.0,desiredRatio=1.0
+2026-07-03 03:13:29.623 27546-27590 GrallocExtra            com.example.gesturecontroller        I  gralloc_extra_query:is_SW3D 0
+2026-07-03 03:13:29.623 27546-27590 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[MainActivity]#0](f:0,a:1) acquireNextBufferLocked size=1240x2772 mFrameNumber=1 applyTransaction=true mTimestamp=809901974012809(auto) mPendingTransactions.size=0 graphicBufferId=118309169135620 transform=0
+2026-07-03 03:13:29.624 27546-27590 VRI[MainActivity]       com.example.gesturecontroller        D  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+2026-07-03 03:13:29.624 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  createInstance(64bit) : createExtendedFactory
+2026-07-03 03:13:29.624 27546-27590 ExtensionsLoader        com.example.gesturecontroller        D  Opened libSchedAssistExtImpl.so
+2026-07-03 03:13:29.625 27546-27609 LibMBrainProxy          com.example.gesturecontroller        D  Init Paramters
+2026-07-03 03:13:29.625 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  draw finished. seqId=0
+2026-07-03 03:13:29.625 27546-27609 ServiceManagerCppClient com.example.gesturecontroller        W  Failed to get isDeclared for vendor.mediatek.hardware.mbrain.IMBrain/default: Status(-1, EX_SECURITY): 'SELinux denied for service.'
+2026-07-03 03:13:29.629 27546-27546 Choreographer           com.example.gesturecontroller        I  Skipped 31 frames!  The application may be doing too much work on its main thread.
+2026-07-03 03:13:29.631 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        W  handleResized, msg:, frameChanged:false, configChanged:false, displayChanged:false, attachedFrameChanged:false, compatScaleChanged:false, pendingDragResizing=false
+2026-07-03 03:13:29.643 27546-27546 DynamicRangeResolver    com.example.gesturecontroller        D  Resolved dynamic range for use case androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f to no compatible HDR dynamic ranges.
+                                                                                                    DynamicRange@550cfbf{encoding=UNSPECIFIED, bitDepth=0}
+                                                                                                    ->
+                                                                                                    DynamicRange@f6ed68c{encoding=SDR, bitDepth=8}
+2026-07-03 03:13:29.644 27546-27546 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:29.646 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface created[total_surfaces=1, used_surfaces=0](androidx.camera.core.processing.SurfaceEdge$SettableSurface@84ca8db}
+2026-07-03 03:13:29.647 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface created[total_surfaces=2, used_surfaces=0](androidx.camera.core.SurfaceRequest$2@a62f7b7}
+2026-07-03 03:13:29.648 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  New surface in use[total_surfaces=2, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@a62f7b7}
+2026-07-03 03:13:29.648 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=1 androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:29.650 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  onFocusEvent true
+2026-07-03 03:13:29.651 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064 ACTIVE
+2026-07-03 03:13:29.653 27546-27546 DynamicFra...igManager] com.example.gesturecontroller        I  initFrameRateConfig: 
+                                                                                                    	levelsFor120hz: [120, 60]
+                                                                                                    	thresholdsFor120hz: [200]
+                                                                                                    	levelsFor90hz: [90]
+                                                                                                    	thresholdsFor90hz: []
+2026-07-03 03:13:29.653 27546-27546 DynamicFra...igManager] com.example.gesturecontroller        I  FRTCConfigManager: FRTC_CAPABILITY = 120, package name = com.example.gesturecontroller, WINDOW_ANIMATION_SPEED_RATE = 10, SCROLL_ANIMATION_SPEED_RATE = 20, PACKAGE_ENABLE = false
+2026-07-03 03:13:29.653 27546-27546 DynamicFra...ontroller] com.example.gesturecontroller        I  init info: mPackageName = com.example.gesturecontroller, mIsEnabled = false
+2026-07-03 03:13:29.655 27546-27605 DeviceQuirks            com.example.gesturecontroller        D  core DeviceQuirks = SurfaceOrderQuirk
+2026-07-03 03:13:29.655 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:29.656 27546-27590 VRI[MainActivity]       com.example.gesturecontroller        D  Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=false syncBuffer=false
+2026-07-03 03:13:29.656 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  draw finished. seqId=0
+2026-07-03 03:13:29.656 27546-27546 PreviewView             com.example.gesturecontroller        D  Surface requested by Preview.
+2026-07-03 03:13:29.657 27546-27546 DeviceQuirks            com.example.gesturecontroller        D  view DeviceQuirks = 
+2026-07-03 03:13:29.659 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use cases [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] now ATTACHED
+2026-07-03 03:13:29.660 27546-27605 Camera2CameraControlImp com.example.gesturecontroller        D  setActive: isActive = true
+2026-07-03 03:13:29.660 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.661 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.662 27546-27546 PreviewView             com.example.gesturecontroller        D  Preview transformation info updated. TransformationInfo{getCropRect=Rect(0, 0 - 1440, 1080), getRotationDegrees=270, getTargetRotation=-1, hasCameraTransform=true, getSensorToBufferTransform=Matrix{[0.62068963, 0.0, -0.0][0.0, 0.62068963, -1.2413793][0.0, 0.0, 1.0]}, isMirroring=true}
+2026-07-03 03:13:29.662 27546-27546 PreviewTransform        com.example.gesturecontroller        D  Transformation info set: TransformationInfo{getCropRect=Rect(0, 0 - 1440, 1080), getRotationDegrees=270, getTargetRotation=-1, hasCameraTransform=true, getSensorToBufferTransform=Matrix{[0.62068963, 0.0, -0.0][0.0, 0.62068963, -1.2413793][0.0, 0.0, 1.0]}, isMirroring=true} 1440x1080 true
+2026-07-03 03:13:29.666 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:29.666 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Skipping Capture Session state check due to current camera state: INITIALIZED and previous session status: false
+2026-07-03 03:13:29.666 27546-27546 TextureView             com.example.gesturecontroller        D  getHardwareLayer, createNewSurface:true
+2026-07-03 03:13:29.666 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000001,api:0,p:-1,c:27546) connect: controlledByApp=true
+2026-07-03 03:13:29.667 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  SurfaceTexture available. Size: 1440x1080
+2026-07-03 03:13:29.667 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  Surface set on Preview.
+2026-07-03 03:13:29.667 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state INITIALIZED
+2026-07-03 03:13:29.668 27546-27546 InsetsController        com.example.gesturecontroller        D  hide(ime(), fromIme=false)
+2026-07-03 03:13:29.669 27546-27546 ImeTracker              com.example.gesturecontroller        I  com.example.gesturecontroller:dc395c87: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-07-03 03:13:29.671 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Attempting to force open the camera.
+2026-07-03 03:13:29.671 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  tryOpenCamera(Camera@23497bd[id=1]) [Available Cameras: 1, Already Open: false (Previous state: null)] --> SUCCESS
+2026-07-03 03:13:29.676 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPENING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:29.679 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Opening camera.
+2026-07-03 03:13:29.680 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: INITIALIZED --> OPENING
+2026-07-03 03:13:29.680 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPENING, error=null} from OPENING and null
+2026-07-03 03:13:29.680 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPENING, error=null}
+2026-07-03 03:13:29.681 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.692 27546-27605 CameraWhiteList         com.example.gesturecontroller        D  check, whiteList empty
+2026-07-03 03:13:29.693 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.696 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:29.696 27546-27605 OplusCameraUtils        com.example.gesturecontroller        D  new OplusCameraUtils!
+2026-07-03 03:13:29.697 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.697 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.697 27546-27605 CameraManager           com.example.gesturecontroller        I  openCameraDeviceUserAsync, use componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.698 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.698 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:29.723 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064 ACTIVE
+2026-07-03 03:13:29.723 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.725 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} CameraDevice.onOpened()
+2026-07-03 03:13:29.725 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: OPENING --> OPENED
+2026-07-03 03:13:29.726 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPEN                  
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:29.726 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPEN, error=null} from OPEN and null
+2026-07-03 03:13:29.726 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPEN, error=null}
+2026-07-03 03:13:29.726 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.728 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:29.730 27546-27605 SyncCaptureSessionBase  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] getSurface done with results: [Surface(name=android.graphics.SurfaceTexture@f826cfd mNativeObject=-5476376628895646720)/@0x60ddbf9]
+2026-07-03 03:13:29.730 27546-27605 CaptureSession          com.example.gesturecontroller        D  Opening capture session.
+2026-07-03 03:13:29.732 27546-27605 Camera2Cap...estBuilder com.example.gesturecontroller        D  template type = 1
+2026-07-03 03:13:29.733 27546-27605 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] start openCaptureSession
+2026-07-03 03:13:29.734 27546-27605 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=2 androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:29.734 27546-27605 OplusCameraManager      com.example.gesturecontroller        I  parseSessionParameters result: null
+2026-07-03 03:13:29.734 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setIsCameraUnitSession E
+2026-07-03 03:13:29.789 27546-27605 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] Session onConfigured()
+2026-07-03 03:13:29.789 27546-27605 CaptureSession          com.example.gesturecontroller        D  Attempting to send capture request onConfigured
+2026-07-03 03:13:29.789 27546-27605 CaptureSession          com.example.gesturecontroller        D  Issuing request for session.
+2026-07-03 03:13:29.789 27546-27605 Camera2Cap...estBuilder com.example.gesturecontroller        D  createCaptureRequest
+2026-07-03 03:13:29.792 27546-27605 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onConfigured() mState=OPENED
+2026-07-03 03:13:29.793 27546-27605 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onReady() OPENED
+2026-07-03 03:13:29.841 27546-27692 ActivityThread          com.example.gesturecontroller        E  Failed to find provider info for com.google.android.gms.fonts
+2026-07-03 03:13:29.915 27546-27559 sturecontroller         com.example.gesturecontroller        I  Compiler allocated 7246KB to compile void android.view.ViewRootImpl.performTraversals()
+2026-07-03 03:13:29.932 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        W  handleResized abandoned!
+2026-07-03 03:13:30.104 27546-27546 StreamStateObserver     com.example.gesturecontroller        D  Update Preview stream state to STREAMING
+2026-07-03 03:13:30.664 27546-27570 OplusScrollToTopManager com.example.gesturecontroller        D  com.example.gesturecontroller/com.example.gesturecontroller.MainActivity,This com.android.internal.policy.DecorView{d41dd71 V.E...... R....... 0,0-1240,2772 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to true
+2026-07-03 03:13:30.699 27546-27546 OplusActiv...eadExtImpl com.example.gesturecontroller        D  init method, sSupressionGC = public static native void dalvik.system.VMRuntime.SupressionGC(int,int), sDesupressionGC = public static native void dalvik.system.VMRuntime.DesupressionGC(int)
+2026-07-03 03:13:30.704 27546-27546 ViewExtract             com.example.gesturecontroller        D  [OplusViewExtractManager] OplusViewExtractManager init com.example.gesturecontroller
+2026-07-03 03:13:30.761 27546-27546 OplusInput...erInternal com.example.gesturecontroller        D  get inputMethodManager extension: com.android.internal.view.IInputMethodManager$Stub$Proxy@80fd250
+2026-07-03 03:13:30.778 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  the up motion event handled by client, just return
+2026-07-03 03:13:30.814 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  onFocusEvent false
+2026-07-03 03:13:31.413 27546-27783 VRI[MainActivity]       com.example.gesturecontroller        D  dispatchAppVisibility visible:false mUpcomingWindowFocus:false
+2026-07-03 03:13:31.414 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  visibilityChanged oldVisibility=true newVisibility=false
+2026-07-03 03:13:31.432 27546-27546 HWUI                    com.example.gesturecontroller        D  RenderProxy::destroy: this=0xb40000789a7e7600, mContext=0xb40000788f8db600
+2026-07-03 03:13:31.432 27546-27590 HWUI                    com.example.gesturecontroller        D  SkiaOpenGLPipeline::setSurface: this=0xb400007908c8d900, surface=NULL
+2026-07-03 03:13:31.437 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=354, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1240, 2772), relayoutAsync=false, flags=0, newFlags=1453337664, title=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:31.450 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1240, 2772), mLastSurfaceSize:Point(1240, 2772), mWidth:1240, mHeight:2772, requestedWidth:1240, requestedHeight:2772, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1240,2772] display=[0,0][1240,2772] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2026-07-03 03:13:31.451 27546-27546 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[MainActivity]#0](f:0,a:3) destructor()
+2026-07-03 03:13:31.451 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [VRI[MainActivity]#0(BLAST Consumer)0](id:6b9a00000000,api:0,p:-1,c:27546) disconnect
+2026-07-03 03:13:31.463 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use cases [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] now DETACHED for camera
+2026-07-03 03:13:31.463 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [] for camera: 1
+2026-07-03 03:13:31.464 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:31.465 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] Session call close()
+2026-07-03 03:13:31.465 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state OPENED
+2026-07-03 03:13:31.466 27546-27606 Camera2CameraControlImp com.example.gesturecontroller        D  setActive: isActive = false
+2026-07-03 03:13:31.470 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:31.471 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  setWindowStopped stopped:true
+2026-07-03 03:13:31.473 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:31.488 27546-27606 VideoUsageControl       com.example.gesturecontroller        D  resetDirectly: mVideoUsage reset!
+2026-07-03 03:13:31.489 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Closing camera.
+2026-07-03 03:13:31.489 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: OPENED --> CLOSING
+2026-07-03 03:13:31.491 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         CLOSING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:31.491 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=CLOSING, error=null} from CLOSING and null
+2026-07-03 03:13:31.491 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=CLOSING, error=null}
+2026-07-03 03:13:31.499 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:31.500 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Skipping Capture Session state check due to current camera state: CLOSING and previous session status: false
+2026-07-03 03:13:31.500 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state CLOSING
+2026-07-03 03:13:31.501 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] Session call super.close()
+2026-07-03 03:13:31.511 27546-27606 CaptureSession          com.example.gesturecontroller        D  onSessionFinished()
+2026-07-03 03:13:31.512 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} closing camera
+2026-07-03 03:13:31.538 27546-27546 StreamStateObserver     com.example.gesturecontroller        D  Update Preview stream state to IDLE
+2026-07-03 03:13:31.626 27546-27783 Quality                 com.example.gesturecontroller        I  MonitorInfo:com.example.gesturecontroller,onDeviceError,CameraDeviceImpl.java_2286,74
+2026-07-03 03:13:31.634 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:31.637 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  use count-1,  useCount=1 closed=false androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:31.637 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} CameraDevice.onClosed()
+2026-07-03 03:13:31.638 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: CLOSING --> INITIALIZED
+2026-07-03 03:13:31.638 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         CLOSED                
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 0 (Max allowed: 1)
+2026-07-03 03:13:31.638 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=CLOSED, error=null} from CLOSED and null
+2026-07-03 03:13:31.638 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=CLOSED, error=null}
+2026-07-03 03:13:31.639 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@9de2ddd] onClosed()
+2026-07-03 03:13:31.819 27546-27570 OplusScrollToTopManager com.example.gesturecontroller        D  com.example.gesturecontroller/com.example.gesturecontroller.MainActivity,This com.android.internal.policy.DecorView{d41dd71 I.E...... R.....ID 0,0-1240,2772 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to false
+2026-07-03 03:13:33.816 27546-27590 HWUI                    com.example.gesturecontroller        D  RenderThread::destroyRenderingContext: this=0xb4000078fdb01380
+2026-07-03 03:13:33.817 27546-27590 HWUI                    com.example.gesturecontroller        D  SkiaOpenGLPipeline::onContextDestroyed: this=0xb400007908c8d900
+2026-07-03 03:13:33.820 27546-27590 HWUI                    com.example.gesturecontroller        D  EglManager::destroy: mEglDisplay=0xb4000078fdbb0280, mEglContext=0xb400007908c37700, mCurrentSurface=0x0
+2026-07-03 03:13:34.376 27546-27973 ProfileInstaller        com.example.gesturecontroller        D  Installing profile for com.example.gesturecontroller
+2026-07-03 03:13:35.500 27546-27546 GestureA11yService      com.example.gesturecontroller        D  Accessibility service connected
+2026-07-03 03:13:38.284 27546-27747 VRI[MainActivity]       com.example.gesturecontroller        D  dispatchAppVisibility visible:true mUpcomingWindowFocus:false
+2026-07-03 03:13:38.294  2012-2065  OplusThermalStats       system_server                        E  Error getting package info: com.example.gesturecontroller
+2026-07-03 03:13:38.295 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  setWindowStopped stopped:false
+2026-07-03 03:13:38.295 27546-27546 ViewRootImpl            com.example.gesturecontroller        D  Skipping stats log for color mode
+2026-07-03 03:13:38.297 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use cases [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] now ATTACHED
+2026-07-03 03:13:38.297 27546-27605 Camera2CameraControlImp com.example.gesturecontroller        D  setActive: isActive = true
+2026-07-03 03:13:38.298 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:38.298 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:38.298 27546-27546 ActivityThread          com.example.gesturecontroller        D  ComponentInfo{com.example.gesturecontroller/com.example.gesturecontroller.MainActivity} checkFinished=false 2
+2026-07-03 03:13:38.298 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:38.298 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Skipping Capture Session state check due to current camera state: INITIALIZED and previous session status: false
+2026-07-03 03:13:38.298 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state INITIALIZED
+2026-07-03 03:13:38.298 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Attempting to force open the camera.
+2026-07-03 03:13:38.298 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  tryOpenCamera(Camera@23497bd[id=1]) [Available Cameras: 1, Already Open: false (Previous state: CLOSED)] --> SUCCESS
+2026-07-03 03:13:38.298 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPENING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:38.299 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Opening camera.
+2026-07-03 03:13:38.299 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: INITIALIZED --> OPENING
+2026-07-03 03:13:38.299 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPENING, error=null} from OPENING and null
+2026-07-03 03:13:38.299 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPENING, error=null}
+2026-07-03 03:13:38.299 27546-27546 ResourcesManagerExtImpl com.example.gesturecontroller        D  applyConfigurationToAppResourcesLocked app.getDisplayId() return callback.displayId:0
+2026-07-03 03:13:38.299 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:38.299 27546-27605 CameraWhiteList         com.example.gesturecontroller        D  check, whiteList empty
+2026-07-03 03:13:38.300 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:38.302 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=354, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1240, 2772), relayoutAsync=false, flags=0, newFlags=1453337664, title=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.303 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:38.310 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1240, 2772), mLastSurfaceSize:Point(1240, 2772), mWidth:1240, mHeight:2772, requestedWidth:1240, requestedHeight:2772, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:true, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1240,2772] display=[0,0][1240,2772] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2026-07-03 03:13:38.310 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        W  updateBlastSurfaceIfNeeded, surfaceSize:Point(1240, 2772), lastSurfaceSize:Point(1240, 2772), format:-1, blastBufferQueue:null
+2026-07-03 03:13:38.310 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000002,api:0,p:-1,c:27546) connect: controlledByApp=false
+2026-07-03 03:13:38.310 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.310 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.310 27546-27605 CameraManager           com.example.gesturecontroller        I  openCameraDeviceUserAsync, use componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.310 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [VRI[MainActivity]#1(BLAST Consumer)1](id:6b9a00000002,api:0,p:-1,c:27546) setMaxAcquiredBufferCount: 3
+2026-07-03 03:13:38.313 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.313 27546-27605 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:38.326 27546-27590 HWUI                    com.example.gesturecontroller        D  createSurface new attribs array
+2026-07-03 03:13:38.326 27546-27590 libEGL                  com.example.gesturecontroller        D  this is from skia gles
+2026-07-03 03:13:38.326 27546-27546 SurfaceControl          com.example.gesturecontroller        I   setExtendedRangeBrightness sc=Surface(name=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity)/@0x43daab8,currentBufferRatio=1.0,desiredRatio=1.0
+2026-07-03 03:13:38.339 27546-27546 TextureView             com.example.gesturecontroller        D  getHardwareLayer, createNewSurface:false
+2026-07-03 03:13:38.347 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064 ACTIVE
+2026-07-03 03:13:38.347 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:38.348 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:38.349 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} CameraDevice.onOpened()
+2026-07-03 03:13:38.349 27546-27605 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: OPENING --> OPENED
+2026-07-03 03:13:38.349 27546-27605 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPEN                  
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:38.349 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPEN, error=null} from OPEN and null
+2026-07-03 03:13:38.349 27546-27605 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPEN, error=null}
+2026-07-03 03:13:38.349 27546-27605 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] for camera: 1
+2026-07-03 03:13:38.349 27546-27605 SyncCaptureSessionBase  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] getSurface done with results: [Surface(name=android.graphics.SurfaceTexture@f826cfd mNativeObject=-5476376628895646720)/@0x60ddbf9]
+2026-07-03 03:13:38.350 27546-27605 CaptureSession          com.example.gesturecontroller        D  Opening capture session.
+2026-07-03 03:13:38.350 27546-27605 Camera2Cap...estBuilder com.example.gesturecontroller        D  template type = 1
+2026-07-03 03:13:38.351 27546-27605 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] start openCaptureSession
+2026-07-03 03:13:38.351 27546-27605 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=2 androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:38.351 27546-27605 OplusCameraManager      com.example.gesturecontroller        I  parseSessionParameters result: null
+2026-07-03 03:13:38.351 27546-27605 OplusCamer...agerGlobal com.example.gesturecontroller        I  setIsCameraUnitSession E
+2026-07-03 03:13:38.361 27546-27590 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[MainActivity]#1](f:0,a:1) acquireNextBufferLocked size=1240x2772 mFrameNumber=1 applyTransaction=true mTimestamp=809910711273656(auto) mPendingTransactions.size=0 graphicBufferId=118309169135633 transform=0
+2026-07-03 03:13:38.361 27546-27590 VRI[MainActivity]       com.example.gesturecontroller        D  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+2026-07-03 03:13:38.361 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  draw finished. seqId=0
+2026-07-03 03:13:38.387 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  onFocusEvent true
+2026-07-03 03:13:38.402 27546-27546 InsetsController        com.example.gesturecontroller        D  hide(ime(), fromIme=false)
+2026-07-03 03:13:38.402 27546-27546 ImeTracker              com.example.gesturecontroller        I  com.example.gesturecontroller:2581839c: onCancelled at PHASE_CLIENT_ALREADY_HIDDEN
+2026-07-03 03:13:38.416 27546-27605 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] Session onConfigured()
+2026-07-03 03:13:38.417 27546-27605 CaptureSession          com.example.gesturecontroller        D  Attempting to send capture request onConfigured
+2026-07-03 03:13:38.417 27546-27605 CaptureSession          com.example.gesturecontroller        D  Issuing request for session.
+2026-07-03 03:13:38.417 27546-27605 Camera2Cap...estBuilder com.example.gesturecontroller        D  createCaptureRequest
+2026-07-03 03:13:38.420 27546-27605 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onConfigured() mState=OPENED
+2026-07-03 03:13:38.421 27546-27605 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onReady() OPENED
+2026-07-03 03:13:38.562 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        W  handleResized abandoned!
+2026-07-03 03:13:38.709 27546-27546 StreamStateObserver     com.example.gesturecontroller        D  Update Preview stream state to STREAMING
+2026-07-03 03:13:39.393 27546-27570 OplusScrollToTopManager com.example.gesturecontroller        D  com.example.gesturecontroller/com.example.gesturecontroller.MainActivity,This com.android.internal.policy.DecorView{d41dd71 V.E...... R....... 0,0-1240,2772 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to true
+2026-07-03 03:13:39.479 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  the up motion event handled by client, just return
+2026-07-03 03:13:39.526 27546-27546 OplusCusto...ionManager com.example.gesturecontroller        E  sInstance is null, start a new sInstance
+2026-07-03 03:13:39.532 27546-27546 WindowManager           com.example.gesturecontroller        D  Add to mViews: android.widget.LinearLayout{706c16e V.E...... ......I. 0,0-0,0 alpha=1.0 viewInfo = },pkg= null
+2026-07-03 03:13:39.575 27546-27590 skia                    com.example.gesturecontroller        D  setRusSupported enable 0
+2026-07-03 03:13:39.586 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  onDisplayChanged -1 for VRI android.view.ViewRootImpl@78db2a5
+2026-07-03 03:13:39.634 27546-27546 nativeloader            com.example.gesturecontroller        D  Load /data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk!/lib/arm64-v8a/libmediapipe_tasks_vision_jni.so using class loader ns clns-9 (caller=/data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk!classes8.dex): ok
+2026-07-03 03:13:39.669 27546-27546 native                  com.example.gesturecontroller        I  I0000 00:00:1783019619.668937   27546 asset_manager_util.cc:61] Created global reference to asset manager.
+2026-07-03 03:13:39.669 27546-27546 sturecontroller         com.example.gesturecontroller        I  ThrowNoClassDefFoundError when open swordfish
+2026-07-03 03:13:39.669 27546-27546 sturecontroller         com.example.gesturecontroller        I  ThrowNoClassDefFoundError when open swordfish
+2026-07-03 03:13:39.733 27546-28176 TransportR...oScheduler com.example.gesturecontroller        D  Scheduling upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) with jobId=-217503440 in 30000ms(Backend next call timestamp 1783017537293). Attempt 1
+2026-07-03 03:13:39.743 27546-27546 native                  com.example.gesturecontroller        I  I0000 00:00:1783019619.743907   27546 resource_util_android.cc:89] Successfully loaded: models/hand_landmarker.task
+2026-07-03 03:13:39.749 27546-27546 native                  com.example.gesturecontroller        I  I0000 00:00:1783019619.748982   27546 graph.cc:502] Start running the graph, waiting for inputs.
+2026-07-03 03:13:39.749 27546-27546 native                  com.example.gesturecontroller        I  I0000 00:00:1783019619.749184   27546 gl_context_egl.cc:86] Successfully initialized EGL. Major : 1 Minor: 4
+2026-07-03 03:13:39.760 27546-28190 native                  com.example.gesturecontroller        I  I0000 00:00:1783019619.760642   28190 gl_context.cc:407] GL version: 3.2 (OpenGL ES 3.2 v1.r32p1-01eac0.b1c355f1ca75ee340751fc2d07d2e153), renderer: Mali-G710 MC10
+2026-07-03 03:13:39.762 27546-28178 tflite                  com.example.gesturecontroller        I  Initialized TensorFlow Lite runtime.
+2026-07-03 03:13:39.764 27546-28178 libc                    com.example.gesturecontroller        W  Access denied finding property "ro.hardware.chipname"
+2026-07-03 03:13:39.766 27546-28178 tflite                  com.example.gesturecontroller        I  Created TensorFlow Lite XNNPACK delegate for CPU.
+2026-07-03 03:13:39.767 27546-28178 tflite                  com.example.gesturecontroller        I  Replacing 272 out of 272 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for subgraph 0.
+2026-07-03 03:13:39.794 27546-28178 native                  com.example.gesturecontroller        W  W0000 00:00:1783019619.794918   28178 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2026-07-03 03:13:39.800 27546-28180 tflite                  com.example.gesturecontroller        I  Replacing 165 out of 165 node(s) with delegate (TfLiteXNNPackDelegate) node, yielding 1 partitions for subgraph 0.
+2026-07-03 03:13:39.816 27546-28180 native                  com.example.gesturecontroller        W  W0000 00:00:1783019619.816118   28180 inference_feedback_manager.cc:121] Feedback manager requires a model with a single signature inference. Disabling support for feedback tensors.
+2026-07-03 03:13:39.820 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  onFocusEvent false
+2026-07-03 03:13:39.825 27546-27546 sturecontroller         com.example.gesturecontroller        I  _Desupression native alloc gc_urgency: 182728 native bytes: 99319700
+2026-07-03 03:13:39.858 27546-27546 OplusBracketLog         com.example.gesturecontroller        E  [OplusViewMirrorManager] updateHostViewRootIfNeeded, not support android.view.ViewRootImpl@78db2a5
+2026-07-03 03:13:39.858 27546-27546 WindowOnBackDispatcher  com.example.gesturecontroller        D   predictive settings is disabled for com.example.gesturecontroller
+2026-07-03 03:13:39.858 27546-27546 WindowOnBackDispatcher  com.example.gesturecontroller        D   predictive settings is disabled for com.example.gesturecontroller
+2026-07-03 03:13:39.865 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000003,api:0,p:-1,c:27546) connect: controlledByApp=false
+2026-07-03 03:13:39.865 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [VRI[]#2(BLAST Consumer)2](id:6b9a00000003,api:0,p:-1,c:27546) setMaxAcquiredBufferCount: 3
+2026-07-03 03:13:39.868 27546-27590 HWUI                    com.example.gesturecontroller        D  createSurface new attribs array
+2026-07-03 03:13:39.869 27546-27590 libEGL                  com.example.gesturecontroller        D  this is from skia gles
+2026-07-03 03:13:39.876 27546-27546 SurfaceControl          com.example.gesturecontroller        I   setExtendedRangeBrightness sc=Surface(name=)/@0xb45631d,currentBufferRatio=1.0,desiredRatio=1.0
+2026-07-03 03:13:39.881 27546-27590 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[]#2](f:0,a:1) acquireNextBufferLocked size=467x140 mFrameNumber=1 applyTransaction=true mTimestamp=809912231674272(auto) mPendingTransactions.size=0 graphicBufferId=118309169135646 transform=0
+2026-07-03 03:13:39.881 27546-27590 VRI[]                   com.example.gesturecontroller        D  Received frameCommittedCallback lastAttemptedDrawFrameNum=1 didProduceBuffer=true syncBuffer=false
+2026-07-03 03:13:39.882 27546-27546 VRI[]                   com.example.gesturecontroller        D  draw finished. seqId=0
+2026-07-03 03:13:39.884 27546-27546 sturecontroller         com.example.gesturecontroller        I  _Desupression native alloc gc_urgency: 184076 native bytes: 99917524
+2026-07-03 03:13:39.888 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  surface closed,  useCount=2 closed=true androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:39.888 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  surface closed,  useCount=0 closed=true androidx.camera.core.processing.SurfaceEdge$SettableSurface@84ca8db
+2026-07-03 03:13:39.888 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface terminated[total_surfaces=1, used_surfaces=1](androidx.camera.core.processing.SurfaceEdge$SettableSurface@84ca8db}
+2026-07-03 03:13:39.888 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  use count-1,  useCount=1 closed=true androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:39.889 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use cases [androidx.camera.core.Preview-5ecca080-b5e2-44af-bd0e-e79a0980157f258004064] now DETACHED for camera
+2026-07-03 03:13:39.889 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [] for camera: 1
+2026-07-03 03:13:39.889 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:39.889 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] Session call close()
+2026-07-03 03:13:39.889 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state OPENED
+2026-07-03 03:13:39.889 27546-27606 Camera2CameraControlImp com.example.gesturecontroller        D  setActive: isActive = false
+2026-07-03 03:13:39.889 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:39.890 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:39.890 27546-27606 VideoUsageControl       com.example.gesturecontroller        D  resetDirectly: mVideoUsage reset!
+2026-07-03 03:13:39.890 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Closing camera.
+2026-07-03 03:13:39.890 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: OPENED --> CLOSING
+2026-07-03 03:13:39.890 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         CLOSING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:39.890 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=CLOSING, error=null} from CLOSING and null
+2026-07-03 03:13:39.890 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=CLOSING, error=null}
+2026-07-03 03:13:39.890 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:39.890 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Skipping Capture Session state check due to current camera state: CLOSING and previous session status: false
+2026-07-03 03:13:39.890 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state CLOSING
+2026-07-03 03:13:39.891 27546-28176 TransportR...EventStore com.example.gesturecontroller        D  Storing event with priority=DEFAULT, name=COREML_ON_DEVICE_SOLUTIONS for destination cct
+2026-07-03 03:13:39.898 27546-27546 DynamicRangeResolver    com.example.gesturecontroller        D  Resolved dynamic range for use case androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f321 to no compatible HDR dynamic ranges.
+                                                                                                    DynamicRange@550cfbf{encoding=UNSPECIFIED, bitDepth=0}
+                                                                                                    ->
+                                                                                                    DynamicRange@f6ed68c{encoding=SDR, bitDepth=8}
+2026-07-03 03:13:39.900 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] Session call super.close()
+2026-07-03 03:13:39.902 27546-27546 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:39.902 27546-27546 CameraQuirks            com.example.gesturecontroller        D  camera2 CameraQuirks = 
+2026-07-03 03:13:39.903 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface created[total_surfaces=2, used_surfaces=1](androidx.camera.core.processing.SurfaceEdge$SettableSurface@a2a4d8d}
+2026-07-03 03:13:39.904 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface created[total_surfaces=3, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@6fb3589}
+2026-07-03 03:13:39.904 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  New surface in use[total_surfaces=3, used_surfaces=2](androidx.camera.core.SurfaceRequest$2@6fb3589}
+2026-07-03 03:13:39.904 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=1 androidx.camera.core.SurfaceRequest$2@6fb3589
+2026-07-03 03:13:39.905 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:39.905 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000004,api:0,p:-1,c:27546) connect: controlledByApp=true
+2026-07-03 03:13:39.905 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [unnamed-27546-4](id:6b9a00000004,api:0,p:-1,c:27546) setMaxAcquiredBufferCount: 4
+2026-07-03 03:13:39.906 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000005,api:0,p:-1,c:27546) connect: controlledByApp=true
+2026-07-03 03:13:39.906 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [unnamed-27546-5](id:6b9a00000005,api:0,p:-1,c:27546) setMaxAcquiredBufferCount: 4
+2026-07-03 03:13:39.906 27546-27546 DeferrableSurface       com.example.gesturecontroller        D  Surface created[total_surfaces=4, used_surfaces=2](androidx.camera.core.impl.ImmediateSurface@cbde09a}
+2026-07-03 03:13:39.919 27546-28176 TransportR...oScheduler com.example.gesturecontroller        D  Upload for context TransportContext(cct, DEFAULT, MSRodHRwczovL2ZpcmViYXNlbG9nZ2luZy5nb29nbGVhcGlzLmNvbS92MGNjL2xvZy9iYXRjaD9mb3JtYXQ9anNvbl9wcm90bzNc) is already scheduled. Returning...
+2026-07-03 03:13:39.926 27546-27546 PreviewView             com.example.gesturecontroller        D  Surface requested by Preview.
+2026-07-03 03:13:39.937 27546-27590 VRI[]                   com.example.gesturecontroller        D  Received frameCommittedCallback lastAttemptedDrawFrameNum=2 didProduceBuffer=true syncBuffer=false
+2026-07-03 03:13:39.938 27546-27546 VRI[]                   com.example.gesturecontroller        D  draw finished. seqId=0
+2026-07-03 03:13:39.939 27546-27546 TextureView             com.example.gesturecontroller        D  getHardwareLayer, createNewSurface:true
+2026-07-03 03:13:39.939 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [](id:6b9a00000006,api:0,p:-1,c:27546) connect: controlledByApp=true
+2026-07-03 03:13:39.939 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  SurfaceTexture available. Size: 1440x1080
+2026-07-03 03:13:39.940 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  Surface set on Preview.
+2026-07-03 03:13:39.941 27546-27546 StreamStateObserver     com.example.gesturecontroller        D  Update Preview stream state to IDLE
+2026-07-03 03:13:39.941 27546-27546 PreviewView             com.example.gesturecontroller        D  Preview transformation info updated. TransformationInfo{getCropRect=Rect(0, 0 - 1440, 1080), getRotationDegrees=270, getTargetRotation=-1, hasCameraTransform=true, getSensorToBufferTransform=Matrix{[0.62068963, 0.0, -0.0][0.0, 0.62068963, -1.2413793][0.0, 0.0, 1.0]}, isMirroring=true}
+2026-07-03 03:13:39.942 27546-27546 PreviewTransform        com.example.gesturecontroller        D  Transformation info set: TransformationInfo{getCropRect=Rect(0, 0 - 1440, 1080), getRotationDegrees=270, getTargetRotation=-1, hasCameraTransform=true, getSensorToBufferTransform=Matrix{[0.62068963, 0.0, -0.0][0.0, 0.62068963, -1.2413793][0.0, 0.0, 1.0]}, isMirroring=true} 1440x1080 true
+2026-07-03 03:13:39.965 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:39.980 27546-27606 CaptureSession          com.example.gesturecontroller        D  onSessionFinished()
+2026-07-03 03:13:39.981 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} closing camera
+2026-07-03 03:13:40.089 27546-27560 sturecontroller         com.example.gesturecontroller        I  NativeAlloc concurrent mark compact GC freed 7125KB AllocSpace bytes, 1(52KB) LOS objects, 49% free,5107KB(M:3383KB,L:1724KB)/10214KB, paused 2.335ms,4.124ms total 193.501ms
+2026-07-03 03:13:40.105 27546-27747 Quality                 com.example.gesturecontroller        I  MonitorInfo:com.example.gesturecontroller,onDeviceError,CameraDeviceImpl.java_2286,66
+2026-07-03 03:13:40.106 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549 ACTIVE
+2026-07-03 03:13:40.106 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:40.109 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394 ACTIVE
+2026-07-03 03:13:40.109 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [] for camera: 1
+2026-07-03 03:13:40.109 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use cases [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] now ATTACHED
+2026-07-03 03:13:40.109 27546-27606 Camera2CameraControlImp com.example.gesturecontroller        D  setActive: isActive = true
+2026-07-03 03:13:40.110 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.110 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.110 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Resetting Capture Session
+2026-07-03 03:13:40.111 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Skipping Capture Session state check due to current camera state: CLOSING and previous session status: false
+2026-07-03 03:13:40.111 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Releasing session in state CLOSING
+2026-07-03 03:13:40.111 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: CLOSING --> REOPENING
+2026-07-03 03:13:40.111 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPENING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:40.112 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPENING, error=null} from OPENING and null
+2026-07-03 03:13:40.112 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPENING, error=null}
+2026-07-03 03:13:40.112 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549 ACTIVE
+2026-07-03 03:13:40.113 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.113 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Use case androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394 ACTIVE
+2026-07-03 03:13:40.113 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.116 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  use count-1,  useCount=0 closed=true androidx.camera.core.SurfaceRequest$2@a62f7b7
+2026-07-03 03:13:40.116 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  Surface no longer in use[total_surfaces=4, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@a62f7b7}
+2026-07-03 03:13:40.116 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  Surface terminated[total_surfaces=3, used_surfaces=1](androidx.camera.core.SurfaceRequest$2@a62f7b7}
+2026-07-03 03:13:40.117 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} CameraDevice.onClosed()
+2026-07-03 03:13:40.117 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  Safe to release surface.
+2026-07-03 03:13:40.117 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Attempting to open the camera.
+2026-07-03 03:13:40.117 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  tryOpenCamera(Camera@23497bd[id=1]) [Available Cameras: 0, Already Open: true (Previous state: OPENING)] --> SUCCESS
+2026-07-03 03:13:40.117 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPENING               
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:40.117 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Opening camera.
+2026-07-03 03:13:40.117 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: REOPENING --> OPENING
+2026-07-03 03:13:40.117 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPENING, error=null} from OPENING and null
+2026-07-03 03:13:40.118 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.118 27546-27546 TextureViewImpl         com.example.gesturecontroller        D  SurfaceTexture about to manually be destroyed
+2026-07-03 03:13:40.118 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [SurfaceTexture-0-27546-0](id:6b9a00000001,api:0,p:-1,c:27546) disconnect
+2026-07-03 03:13:40.118 27546-27606 CameraWhiteList         com.example.gesturecontroller        D  check, whiteList empty
+2026-07-03 03:13:40.119 27546-27606 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:40.126 27546-27567 VRI[MainActivity]       com.example.gesturecontroller        D  dispatchAppVisibility visible:false mUpcomingWindowFocus:false
+2026-07-03 03:13:40.126 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  visibilityChanged oldVisibility=true newVisibility=false
+2026-07-03 03:13:40.128 27546-27546 HWUI                    com.example.gesturecontroller        D  RenderProxy::destroy: this=0xb40000789a7e7600, mContext=0xb40000788f8db600
+2026-07-03 03:13:40.128 27546-27590 HWUI                    com.example.gesturecontroller        D  SkiaOpenGLPipeline::setSurface: this=0xb400007908c8d900, surface=NULL
+2026-07-03 03:13:40.128 27546-27606 OplusCamer...agerGlobal com.example.gesturecontroller        I  setClientInfo, packageName: com.example.gesturecontroller, uid: 10422, pid: 27546
+2026-07-03 03:13:40.130 27546-27546 ViewRootImplExtImpl     com.example.gesturecontroller        D  wrapConfigInfoIntoFlags rotation=0, smallestScreenWidthDp=354, residentWS=false, scenario=0, bounds=Rect(0, 0 - 1240, 2772), relayoutAsync=false, flags=0, newFlags=1453337664, title=com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.138 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  relayoutWindow result, sizeChanged:false, surfaceControlChanged:true, transformHintChanged:false, mSurfaceSize:Point(1240, 2772), mLastSurfaceSize:Point(1240, 2772), mWidth:1240, mHeight:2772, requestedWidth:1240, requestedHeight:2772, transformHint:0, installOrientation:0, displayRotation:0, isSurfaceValid:false, attr.flag:-2122252032, tmpFrames:ClientWindowFrames{frame=[0,0][1240,2772] display=[0,0][1240,2772] parentFrame=[0,0][0,0]}, relayoutAsync:false, mSyncSeqId:0
+2026-07-03 03:13:40.138 27546-27546 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[MainActivity]#1](f:0,a:2) destructor()
+2026-07-03 03:13:40.138 27546-27546 BufferQueueConsumer     com.example.gesturecontroller        D  [VRI[MainActivity]#1(BLAST Consumer)1](id:6b9a00000002,api:0,p:-1,c:27546) disconnect
+2026-07-03 03:13:40.139 27546-27546 VRI[MainActivity]       com.example.gesturecontroller        D  setWindowStopped stopped:true
+2026-07-03 03:13:40.144 27546-27606 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.144 27546-27606 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.144 27546-27606 CameraManager           com.example.gesturecontroller        I  openCameraDeviceUserAsync, use componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.148 27546-27606 OplusCameraUtils        com.example.gesturecontroller        I  current activityName: com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.148 27546-27606 OplusCameraUtils        com.example.gesturecontroller        I  getComponentName, componentName: com.example.gesturecontroller/com.example.gesturecontroller.MainActivity, packageName:com.example.gesturecontroller, activityName:com.example.gesturecontroller.MainActivity
+2026-07-03 03:13:40.184 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@cc88a0d] onClosed()
+2026-07-03 03:13:40.185 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} CameraDevice.onOpened()
+2026-07-03 03:13:40.185 27546-27606 Camera2CameraImpl       com.example.gesturecontroller        D  {Camera@23497bd[id=1]} Transitioning camera internal state: OPENING --> OPENED
+2026-07-03 03:13:40.185 27546-27606 CameraStateRegistry     com.example.gesturecontroller        D  Recalculating open cameras:
+                                                                                                    Camera                                       State                 
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Camera@bbce6fe[id=2]                         UNKNOWN               
+                                                                                                    Camera@23497bd[id=1]                         OPEN                  
+                                                                                                    Camera@223c14d[id=0]                         UNKNOWN               
+                                                                                                    -------------------------------------------------------------------
+                                                                                                    Open count: 1 (Max allowed: 1)
+2026-07-03 03:13:40.187 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  New public camera state CameraState{type=OPEN, error=null} from OPEN and null
+2026-07-03 03:13:40.187 27546-27606 CameraStateMachine      com.example.gesturecontroller        D  Publishing new public camera state CameraState{type=OPEN, error=null}
+2026-07-03 03:13:40.189 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  All use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.192 27546-27606 UseCaseAttachState      com.example.gesturecontroller        D  Active and attached use case: [androidx.camera.core.Preview-f7f4d709-f185-4f0d-9bf2-cf7b9295f32191150549, androidx.camera.core.ImageAnalysis-68b840c1-16e3-43ee-a8f9-03f26f9aa0b392394] for camera: 1
+2026-07-03 03:13:40.193 27546-27606 SyncCaptureSessionBase  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@312b75a] getSurface done with results: [Surface(name=android.graphics.SurfaceTexture@b55778f mNativeObject=-5476376631809416704)/@0xf11b3fa, Surface(name=null mNativeObject=-5476376631809429504)/@0xd339b05]
+2026-07-03 03:13:40.193 27546-27606 CaptureSession          com.example.gesturecontroller        D  Opening capture session.
+2026-07-03 03:13:40.194 27546-27606 Camera2Cap...estBuilder com.example.gesturecontroller        D  template type = 1
+2026-07-03 03:13:40.196 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@312b75a] start openCaptureSession
+2026-07-03 03:13:40.196 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=2 androidx.camera.core.SurfaceRequest$2@6fb3589
+2026-07-03 03:13:40.197 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  New surface in use[total_surfaces=3, used_surfaces=2](androidx.camera.core.impl.ImmediateSurface@cbde09a}
+2026-07-03 03:13:40.197 27546-27606 DeferrableSurface       com.example.gesturecontroller        D  use count+1, useCount=1 androidx.camera.core.impl.ImmediateSurface@cbde09a
+2026-07-03 03:13:40.197 27546-27606 OplusCameraManager      com.example.gesturecontroller        I  parseSessionParameters result: null
+2026-07-03 03:13:40.197 27546-27606 OplusCamer...agerGlobal com.example.gesturecontroller        I  setIsCameraUnitSession E
+2026-07-03 03:13:40.255 27546-27606 SyncCaptureSessionImpl  com.example.gesturecontroller        D  [androidx.camera.camera2.internal.SynchronizedCaptureSessionImpl@312b75a] Session onConfigured()
+2026-07-03 03:13:40.255 27546-27606 CaptureSession          com.example.gesturecontroller        D  Attempting to send capture request onConfigured
+2026-07-03 03:13:40.255 27546-27606 CaptureSession          com.example.gesturecontroller        D  Issuing request for session.
+2026-07-03 03:13:40.255 27546-27606 Camera2Cap...estBuilder com.example.gesturecontroller        D  createCaptureRequest
+2026-07-03 03:13:40.257 27546-27606 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onConfigured() mState=OPENED
+2026-07-03 03:13:40.257 27546-27606 CaptureSession          com.example.gesturecontroller        D  CameraCaptureSession.onReady() OPENED
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_mm
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_mm-uncached
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_svp_page-uncached
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_prot_region
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_2d_fr_region
+2026-07-03 03:13:40.541 27546-28356 DMABUFHEAPS             com.example.gesturecontroller        I  Using DMA-BUF heap named: mtk_wfd_page-uncached
+2026-07-03 03:13:40.545 27546-28356 nativeloader            com.example.gesturecontroller        D  Load /data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk!/lib/arm64-v8a/libimage_processing_util_jni.so using class loader ns clns-9 (caller=/data/app/~~TuIkqdi7EdInLthLKe0www==/com.example.gesturecontroller-xGPezMCKPS8vle3Zq7jhgw==/base.apk): ok
+2026-07-03 03:13:40.553 27546-28191 sturecontroller         com.example.gesturecontroller        I  _Desupression native alloc  gc_urgency: 57370expectation: 406220 native bytes: 97797364
+2026-07-03 03:13:40.560 27546-28191 sturecontroller         com.example.gesturecontroller        I  hiddenapi: Accessing hidden field Landroid/graphics/Bitmap;->mNativePtr:J (runtime_flags=0, domain=platform, api=unsupported) from Lcom/google/mediapipe/framework/AndroidPacketCreator; (domain=app) using JNI: allowed
+2026-07-03 03:13:40.616 27546-28184 native                  com.example.gesturecontroller        W  W0000 00:00:1783019620.616340   28184 landmark_projection_calculator.cc:81] Using NORM_RECT without IMAGE_DIMENSIONS is only supported for the square ROI. Provide IMAGE_DIMENSIONS or use PROJECTION_MATRIX.
+2026-07-03 03:13:40.617 27546-28184 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.617077   28184 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.659 27546-28188 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.659290   28188 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.746 27546-28178 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.746275   28178 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.793 27546-28179 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.793287   28179 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.851 27546-28189 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.851810   28189 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.898 27546-28180 native                  com.example.gesturecontroller        I  I0000 00:00:1783019620.898611   28180 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:40.910 27546-27570 OplusScrollToTopManager com.example.gesturecontroller        D  com.example.gesturecontroller/com.example.gesturecontroller.MainActivity,This com.android.internal.policy.DecorView{d41dd71 I.E...... R.....ID 0,0-1240,2772 aid=0 alpha=1.0 viewInfo = }[MainActivity] change focus to false
+2026-07-03 03:13:41.100 27546-28185 native                  com.example.gesturecontroller        I  I0000 00:00:1783019621.100170   28185 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:42.299 27546-28181 native                  com.example.gesturecontroller        I  I0000 00:00:1783019622.298282   28181 jni_util.cc:43] GetEnv: not attached
+2026-07-03 03:13:45.020 27546-27546 SurfaceControl          com.example.gesturecontroller        I   setExtendedRangeBrightness sc=Surface(name=)/@0xb45631d,currentBufferRatio=1.0,desiredRatio=1.0
+2026-07-03 03:13:45.021 27546-27590 HWUI                    com.example.gesturecontroller        D  createSurface new attribs array
+2026-07-03 03:13:45.021 27546-27590 libEGL                  com.example.gesturecontroller        D  this is from skia gles
+2026-07-03 03:13:45.023 27546-27546 VRI[]                   com.example.gesturecontroller        W  handleResized abandoned!
+2026-07-03 03:13:45.028 27546-27590 BLASTBufferQueue        com.example.gesturecontroller        D  [VRI[]#2](f:0,a:3) producer disconnected before acquireNextBufferLocked
+2026-07-03 03:13:45.049 27546-28191 sturecontroller         com.example.gesturecontroller        I  _Desupression native alloc gc_urgency: 78163 native bytes: 110757748
+2026-07-03 03:13:45.305 27546-27546 GestureA11yService      com.example.gesturecontroller        D  Swipe gesture completed
+2026-07-03 03:13:48.237 27546-27560 Quality                 com.example.gesturecontroller        I  GCInfo: com.example.gesturecontroller,50-3.184s-1.521s-5.305ms-8319KB-17MB-7194KB-0B-6.865s-809915.570s,0,0,1-193.501ms-46.776ms-6.459ms-35MB-148MB-5107KB-0B,1,0,49-2.990s-1.474s-5.282ms-6475KB-12MB-7237KB-0B
+2026-07-03 03:13:52.881 27546-27560 Quality                 com.example.gesturecontroller        I  GCInfo: com.example.gesturecontroller,50-2.107s-1.737s-3.746ms-8960KB-10MB-7387KB-0B-0-809925.231s,1,0,50-2.107s-1.737s-3.746ms-8960KB-10MB-7387KB-0B
+2026-07-03 03:13:57.675 27546-27560 Quality                 com.example.gesturecontroller        I  GCInfo: com.example.gesturecontroller,50-2.139s-1.802s-3.679ms-8721KB-10MB-7581KB-0B-0-809930.025s,1,0,50-2.139s-1.802s-3.679ms-8721KB-10MB-7581KB-0B
+2026-07-03 03:13:58.251  2012-2028  AppOps                  system_server                        E  Operation not started: uid=10422 pkg=com.example.gesturecontroller(null) op=START_FOREGROUND
+2026-07-03 03:13:58.293  2012-3898  AppOps                  system_server                        E  Operation not started: uid=10422 pkg=com.example.gesturecontroller(null) op=CAMERA
+2026-07-03 03:13:58.348  2012-2368  InputDispatcher         system_server                        E  channel 'c4a7d68 com.example.gesturecontroller' ~ Channel is unrecoverably broken and will be disposed!
+---------------------------- PROCESS ENDED (27546) for package com.example.gesturecontroller ----------------------------
+2026-07-03 03:13:58.350  2012-2368  AppOps                  system_server                        E  Operation not started: uid=10422 pkg=com.example.gesturecontroller(null) op=SYSTEM_ALERT_WINDOW
